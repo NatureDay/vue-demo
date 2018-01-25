@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld2',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App!!!'
+      msg: 'Welcome to Your Vue.js App 666'
     }
   }
 }
@@ -109,7 +109,7 @@ li {
   margin: 0 10px;
 }
 a {
-  color: red;
+  color: #42b983;
 }
 
 </style>
