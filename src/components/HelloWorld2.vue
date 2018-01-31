@@ -84,14 +84,28 @@
 </template>
 
 <script>
+
+import http from '../utils/http'
+
 export default {
   name: 'HelloWorld2',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App 666'
     }
+  },
+   mounted: function () {
+    this.fetchData()
+  },
+   methods: {
+    fetchData: async function () {
+      http.get('noa/news/type_list')
+    }
   }
 }
+
+
+
 
 </script>
 
@@ -111,5 +125,8 @@ li {
 a {
   color: #42b983;
 }
+
+
+
 
 </style>
